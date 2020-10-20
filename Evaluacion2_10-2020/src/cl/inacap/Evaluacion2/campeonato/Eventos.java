@@ -1,7 +1,5 @@
 package cl.inacap.Evaluacion2.campeonato;
 
-public class Evento {
-
 	public class Eventos {
 		private String codEvento;
 		private String nombreEvento;
@@ -37,7 +35,6 @@ public class Evento {
 			descEvento = descripcion;
 		}
 	}
-}
 
 
 	

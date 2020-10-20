@@ -1,16 +1,16 @@
 package cl.inacap.Evaluacion2.campeonato;
 
-public class Equipo {
-	
 	public class Equipos {	
 		private String codEquipo;
 		private String nombreEquipo;
-		private String plantelTotal;
+		private String plantelEquipo;
+		private int cantEquipos;
 		
-		public Equipos(String codEquipo, String nombreEquipo, String plantelTotal) {
+		public Equipos(String codEquipo, String nombreEquipo, String plantelTotal, int cantEquipos) {
 			this.codEquipo = codEquipo;
 			this.nombreEquipo = nombreEquipo;
-			this.plantelTotal = plantelTotal;
+			this.plantelEquipo = plantelTotal;
+			this.cantEquipos = cantEquipos;
 		}
 		public String getCodEquipo() {
 			return codEquipo;
@@ -24,13 +24,16 @@ public class Equipo {
 		public void setNombreEquipo(String nombreEquipo) {
 			this.nombreEquipo = nombreEquipo;
 		}
-		public String getPlantelTotal() {
-			return plantelTotal;
+		public String getPlantelEquipo() {
+			return plantelEquipo;
 		}
-		public void setPlantelTotal(String plantelTotal) {
-			this.plantelTotal = plantelTotal;
+		public void setPlantelEquipo(String plantelEquipo) {
+			this.plantelEquipo = plantelEquipo;
 		}
-
-
+		public int getCantEquipo() {
+			return cantEquipos;
+		}
+		public void setCantEquipo(int cantEquipos) {
+			this.cantEquipos = cantEquipos;
 		}
 	}
