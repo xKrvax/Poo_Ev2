@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class Start {
 	static Scanner sc = new Scanner(System.in);
-	static Eventos ArrServicio[] = new Eventos[30];
-	static Equipos ArrServicio2[] = new Equipos[30];
+	static Eventos ArrEvento[] = new Eventos[30];
+	static Equipos ArrEquipo[] = new Equipos[30];
 	static int indiceServicio = 0;
 	static int indiceServicio2 = 0;
 	
@@ -119,13 +119,13 @@ public class Start {
 			}
 		}
 		// Llamada a constructor, parametrizando el objeto nuevo
-		Eventos s = new Eventos(codEvento, nombreEvento, descEvento);
-		ArrServicio[indiceServicio] = s; // Agregar Objeo a Arreglo
+		Eventos s = new Eventos(codEvento, nombreEvento, cantEquipos);
+		ArrEvento[indiceServicio] = s; // Agregar Objeo a Arreglo
 		indiceServicio++; // Aumento de variable statica para indicar indice de arreglo
 
 		
-		Equipos b = new Equipos(codEquipo, nombreEquipo, plantelEquipo, cantEquipos);
-		ArrServicio2[indiceServicio2] = b; // Agregar Objeo a Arreglo
+		Equipos b = new Equipos (codEquipo, nombreEquipo, plantelEquipo);
+		ArrEquipo[indiceServicio2] = b; // Agregar Objeo a Arreglo
 		indiceServicio2++; // Aumento de variable statica para indicar indice de arreglo
 
 	}
